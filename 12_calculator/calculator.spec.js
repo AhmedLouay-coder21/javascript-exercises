@@ -1,5 +1,4 @@
 const calculator = require('./calculator');
-
 describe('add', () => {
   test('adds 0 and 0', () => {
     expect(calculator.add(0, 0)).toBe(0);
@@ -27,7 +26,6 @@ describe('subtract', () => {
     expect(calculator.subtract(-8, 7)).toBe(-15);
   });
 });
-
 describe('sum', () => {
   test('computes the sum of an empty array', () => {
     expect(calculator.sum([])).toBe(0);
@@ -45,7 +43,6 @@ describe('sum', () => {
     expect(calculator.sum([1, 3, 5, 7, 9])).toBe(25);
   });
 });
-
 describe('multiply', () => {
   test('multiplies two numbers', () => {
     expect(calculator.multiply([2, 4])).toBe(8);
